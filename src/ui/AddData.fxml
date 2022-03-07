@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddDataController">
+   <center>
+      <AnchorPane prefHeight="475.0" prefWidth="470.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="86.0" layoutY="26.0" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #dcdcdc; -fx-border-color: #000000;">
+               <children>
+                  <Label layoutX="77.0" layoutY="9.0" text="Add new Value" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="208.0" layoutY="100.0" text="VALUE:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="178.0" layoutY="173.0" text="DESCRIPTION:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="214.0" layoutY="284.0" text="Type:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfValue" layoutX="162.0" layoutY="127.0" />
+            <TextArea fx:id="taDescription" layoutX="100.0" layoutY="200.0" prefHeight="66.0" prefWidth="271.0" />
+            <RadioButton fx:id="rbExpense_type" layoutX="257.0" layoutY="316.0" mnemonicParsing="false" onAction="#selectRbExpense" text="Expense">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rbIncome_Type" layoutX="132.0" layoutY="316.0" mnemonicParsing="false" onAction="#selectRbIncome" text="Income">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </RadioButton>
+            <Button fx:id="btCreateValue" layoutX="169.0" layoutY="456.0" mnemonicParsing="false" onAction="#createValue" text="Create value">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="214.0" layoutY="367.0" text="Date:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <DatePicker layoutX="149.0" layoutY="390.0" />
+         </children></AnchorPane>
+   </center>
+</BorderPane>
